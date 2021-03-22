@@ -1,4 +1,4 @@
-# Test Driven Development - Kode Cata
+# Test Driven Development - Code Kata
 
 ## Setup
 * Node.JS 14
