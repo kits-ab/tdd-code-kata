@@ -47,6 +47,7 @@ cd src/<my-kata-name>
 mv file.ts <my-kata-name>.ts
 mv file.test.ts <my-kata-name>.test.ts
 
+yarn install
 yarn watch
 ```
 

@@ -2,7 +2,9 @@
     "scripts": {
         "test": "jest",
         "coverage": "jest --coverage",
-        "watch": "jest --watch-all"
+        "watch": "jest --watch-all",
+        "clean": "rm -rf node_modules",
+        "clean-all": "find . -name \"node_modules\" -type d -prune -exec rm -rf '{}' +"
     },
     "devDependencies": {
         "@types/jest": "26.0.21",
@@ -11,11 +13,6 @@
         "typescript": "4.2.3",
         "ts-node": "9.1.1"
     },
-    "workspaces": [
-        "src/first",
-        "src/fizzbuzz",
-        "template"
-    ],
     "private": true,
     "jest": {
         "transform": {
