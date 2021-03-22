@@ -1,19 +1,53 @@
-# Test Driven Development - Code Kata
+# Code Kata typescript style
 
 ## Setup
-* Node.JS 14
-* npm 6
+1. Get a MacBook
+2. Install [homebrew](https://brew.sh/)
+```code
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+3. Install nvm 
+```code
+$ brew install nvm
+```
+4. Run following in this folder
+```code
+nvm use
+```
+If error:
+```code
+Found '~/tdd-code-kata.git/.nvmrc' with version <14>
+N/A: version "14 -> N/A" is not yet installed.
 
+You need to run "nvm install 14" to install it before using it.
+```
+Run following
+```code
+$ nvm install 14
+Downloading and installing node v14.16.0...
+Now using node v14.16.0 (npm v6.14.11)
+```
+5. Install yarn
+```code
+npm i -g yarn
+```
 ## Develop
 
 ### First time
 
-`npm install`
+`yarn`
 
 ### Every time
 
-`cd [folder]`
+```code
+cp -r template src/<my-kata-name>
 
-Read the README.md for instructions
+cd src/<my-kata-name>
 
-`npm run test`
+mv file.ts <my-kata-name>.ts
+mv file.test.ts <my-kata-name>.test.ts
+
+yarn watch
+```
+
+start hacking!

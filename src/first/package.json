@@ -1,0 +1,23 @@
+{
+    "scripts": {
+        "test": "jest",
+        "watch": "jest --watch",
+        "start": "ts-node file"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.ts?$": "ts-jest"
+        },
+        "testEnvironment": "node",
+        "testRegex": ".*\\.(test|spec)?\\.(ts|tsx)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    },
+    "version": "0.0.0"
+}
