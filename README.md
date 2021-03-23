@@ -52,3 +52,8 @@ yarn watch
 ```
 
 start hacking!
+### After hacking complete
+```code
+cd <root-dir>
+yarn clean-all
+```
