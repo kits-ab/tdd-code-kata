@@ -4,7 +4,8 @@
   "description": "## Setup * Node.JS 14",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint 1_hello_tdd/**.js"
+    "lint": "eslint 1_hello_tdd/**.js",
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
