@@ -1,4 +1,4 @@
-const index = require("./index");
+const { hello } = require("./index");
 test("Simple case", () => {
-  index.hello();
+  expect(hello("planet!")).toEqual("Hello planet!");
 });
