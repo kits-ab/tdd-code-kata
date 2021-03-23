@@ -34,8 +34,11 @@ npm i -g yarn
 ## Develop
 
 ### First time
-
-`yarn`
+```code
+cd <root-dir>
+yarn install
+yarn test
+```
 
 ### Every time
 
