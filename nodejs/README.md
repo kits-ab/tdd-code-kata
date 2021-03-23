@@ -12,8 +12,6 @@
 
 ### Every time
 
-`cd [folder]`
-
-Read the README.md for instructions
-
-`npm run test`
+* `cd [folder]`
+* Read the README.md for instructions
+* `npm run test`
