@@ -1,0 +1,28 @@
+{
+    "scripts": {
+        "test": "if [ -f ../node_modules/.bin/jest ]; then cmd=../node_modules/.bin/jest; else cmd=../../node_modules/.bin/jest; fi; $cmd",
+        "coverage": "npm test -- --coverage",
+        "watch": "npm test -- --watch-all"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.ts?$": "ts-jest"
+        },
+        "testEnvironment": "node",
+        "testRegex": ".*\\.(test|spec)?\\.(ts|tsx)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    }
+}
