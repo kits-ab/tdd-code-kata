@@ -6,4 +6,9 @@ describe('Test heey!', () => {
         const actual = heey('hey')
         expect(actual).toBe(expected)
     })
+    it(`should add a lot of eeees`, () => {
+        const expected = 'heeeeeeeeeey'
+        const actual = heey('heeeeey')
+        expect(actual).toBe(expected)
+    })
 })
