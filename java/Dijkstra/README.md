@@ -91,16 +91,17 @@ Task
                                     5 	e
                                     6 	f 
 
-Edges Start 	End 	Cost
-a 	b 	7
-a 	c 	9
-a 	f 	14
-b 	c 	10
-b 	d 	15
-c 	d 	11
-c 	f 	2
-d 	e 	6
-e 	f 	9
+Edges 
+  Start 	End 	Cost
+    a 	b 	7
+    a 	c 	9
+    a 	f 	14
+    b  	c 	10
+    b 	d 	15
+    c 	d 	11
+    c 	f 	2
+    d 	e 	6
+    e 	f 	9
 
 
 You can use numbers or names to identify vertices in your program. 
