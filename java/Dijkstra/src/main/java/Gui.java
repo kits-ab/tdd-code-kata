@@ -11,15 +11,6 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 public class Gui extends JFrame {
-    public static  Map<String, Node> nodes = new HashMap<>();
-    static {
-        nodes.put("a", new Node("a", 80,80));
-        nodes.put("b", new Node("b", 150,250));
-        nodes.put("c", new Node("c", 180,150));
-        nodes.put("d", new Node("d", 200,270));
-        nodes.put("e", new Node("e", 290,200));
-        nodes.put("f", new Node("f", 220,120));
-    }
 
     public Gui() {
 
@@ -30,10 +21,10 @@ public class Gui extends JFrame {
         JPanel p = new JPanel() {
             @Override
             public void paintComponent(Graphics g) {
-                for (Graph.Edge edge : Dijkstra.GRAPH) {
-                    drawEdge(g, nodes.get(edge.v1), nodes.get(edge.v2));
+                for (Graph.Edge edge : Data.GRAPH) {
+                    drawEdge(g, Data.nodes.get(edge.v1), Data.nodes.get(edge.v2));
                 }
-                for (Node value : nodes.values()) {
+                for (Node value : Data.nodes.values()) {
                     drawNode(g, value.name, value.x, value.y);
                 }
                 Shape rect = new Rectangle(3, 3, 303, 303);
@@ -50,6 +41,8 @@ public class Gui extends JFrame {
         g2.setStroke(new BasicStroke(4f));
         g2.setColor(Color.GRAY);
         g2.draw(circle);
+        g2.setColor(Color.BLUE);
+        g2.drawString(name,x+16, y);
     }
 
     private void drawEdge(Graphics g, Node node1, Node node2) {
